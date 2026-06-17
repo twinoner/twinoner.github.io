@@ -1,0 +1,100 @@
+:root {
+    --main-bg-color: rgb(252, 252, 252);
+    --main-bg-contrast-color: rgb(28, 28, 28);
+    --main-text-color: rgb(33, 33, 33);
+}
+
+[data-theme="dark"] {
+    --main-bg-color: rgb(28, 28, 28);
+    --main-bg-contrast-color: rgb(252, 252, 252);
+    --main-text-color: rgb(16, 198, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+a,
+a:active,
+a:visited {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 4rem;
+}
+
+aside {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+aside p:nth-child(1) {
+    padding-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+i {
+    min-width: 20px;
+    text-align: center;
+}
+
+button#chgTheme {
+    position: fixed;
+    font-size: 1rem;
+    top: 0;
+    right: 0;
+    border: none;
+    padding: 6px;
+    background-color: var(--main-bg-contrast-color);
+    color: var(--main-bg-color);
+    border-radius: 0 0 0 5px;
+}
+
+button#chgTheme>i {
+    display: block;
+}
+
+
+.json-tree {
+    list-style: none;
+    padding-left: 0;
+}
+
+.json-tree ul {
+    list-style: none;
+    padding-left: 20px;
+    border-left: 1px solid #ddd;
+}
+
+.json-tree li {
+    margin: 4px 0;
+}
+
+strong {
+    color: #1565c0;
+}
+
+summary {
+    cursor: pointer;
+}
